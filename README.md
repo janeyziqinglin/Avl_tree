@@ -57,7 +57,7 @@ An AVL tree is implemented using the node structure. Each node stores a key, a p
 The main operations of an AVL tree are:
 createNode, which creates a new node with the given key. getHeight, which returns the height of the given node. getBalanceFactor, which returns the balance factor of the given node, which is the difference in height of its left and right subtrees. updateHeight, which updates the height of the given node. rightRotate, which performs a right rotation on the given node. leftRotate, which performs a left rotation on the given node. rebalance, which rebalances the subtree rooted at the given node. insert, which inserts a new node with the given key into the tree. find, which finds the node with the given key in the tree, and lastly delete, which deletes the node with the given key from the tree.
 
-**Results**
+## Results
 
 Below are the empirical data generated for further analysis. 
 
@@ -93,7 +93,7 @@ Figure 2. Comparison of time complexity between BST and AVL tree for search oper
 Figure 3. Swap number over node number for AVL tree using ascending order and random order.
 ![swapnum](https://user-images.githubusercontent.com/105125897/233557371-2785bec3-cd32-479a-8551-ae4272035ccc.png)
 
-**Discussion:**
+## Discussion
 
 Table II compares the time for insertion and search operations in BST and AVL trees for different numbers of nodes (10, 100, 1000, 10000, 25000, 50000, and 100000). Figure 1 and Figure 2 provides Graphical comparison for the empirical results.
 
@@ -107,7 +107,7 @@ Table III confirm the hypothesis that the number of swaps required for AVL tree 
 
 As expected, Figure 3, shows that the number of swaps required for AVL tree insertion is higher when the nodes are given in ascending order compared to when the nodes are given in random order. In ascending order, the AVL tree becomes more imbalanced, leading to more rotations being required to maintain a balanced height. On the other hand, when the nodes are given in a random order, the AVL tree is more likely to be balanced, requiring fewer rotations and resulting in a lower number of swaps needed for insertion.
 
-**Conclusion:**
+## Conclusion
 
 The hypothesis of the report that AVL trees would outperform Binary Search Trees (BSTs) in terms of search times, particularly for imbalanced or skewed data. Additionally, it was hypothesized that the number of swaps required for AVL tree insertion would increase as the number of nodes in the tree increases. It was also expected that the number of swaps required for AVL tree insertion would be higher when the nodes were given in ascending order compared to when the nodes were given in a random order.
 
@@ -117,7 +117,7 @@ The hypothesis that the number of swaps required for AVL tree insertion is also 
 
 In conclusion, AVL trees offer several advantages over traditional binary search trees. They provide a reliable and efficient solution for searching and managing large datasets with imbalanced or skewed data. AVL trees offer faster search times than traditional binary search trees with O(log n) time complexity for search, insertion, and deletion operations, where n is the number of nodes in the tree. Additionally, the self-balancing feature of AVL trees minimizes the time complexity of operations, making them a powerful tool for handling large datasets.However, AVL trees are not perfect and may not be the best choice in all scenarios. They can be expensive in scenarios where insertions are frequent and searches are infrequent. In such cases, other self-balancing binary search trees such as Red-Black trees  B-trees and B+ trees may be more suitable. Therefore, it is important to consider the specific use case and data requirements before choosing AVL trees as the optimal solution.[3].
 
-**Citation:**
+## Citation
 
 [1]Adel'son-Vel'skiy, G.M., and Landis, Ye.M. An algorithm for the organization of information. Doklady Akad. Nauk USSR Moscos 16, No. 2 (1962), 263-266. Also available in translation as U.S. Dept. of Commerce OTS, JPRS 17,137, Washington, D.C., and as NASA Document N63-11777.
 
