@@ -69,7 +69,7 @@ Table III: Empirical data comparison of number of swap in AVL tree using ascendi
 | 50000 | 1202277 | 456409 |
 | 100000 | 2506332 | 926339 |
 
-plot
+
 Figure 1. Comparison of time complexity between BST and AVL tree for insert operation.
 ![insert](https://user-images.githubusercontent.com/105125897/233557351-fb3ea320-8b9b-4fa7-aef1-854c8ac7f75f.png)
 
@@ -99,7 +99,8 @@ The results of the analysis confirm the hypothesis that AVL trees outperform BST
 
 The hypothesis that the number of swaps required for AVL tree insertion is also confirmed, with the analysis showing that the number of swaps increases as the number of nodes in the tree increases, and more swaps are required when nodes are given in ascending order compared to when they are given in a random order.
 
-In conclusion, AVL trees offer several advantages over traditional binary search trees. They provide a reliable and efficient solution for searching and managing large datasets with imbalanced or skewed data. AVL trees offer faster search times than traditional binary search trees with O(log n) time complexity for search, insertion, and deletion operations, where n is the number of nodes in the tree. Additionally, the self-balancing feature of AVL trees minimizes the time complexity of operations, making them a powerful tool for handling large datasets.
+In conclusion, AVL trees offer several advantages over traditional binary search trees. They provide a reliable and efficient solution for searching and managing large datasets with imbalanced or skewed data. AVL trees offer faster search times than traditional binary search trees with O(log n) time complexity for search, insertion, and deletion operations, where n is the number of nodes in the tree. Additionally, the self-balancing feature of AVL trees minimizes the time complexity of operations, making them a powerful tool for handling large datasets.However, AVL trees are not perfect and may not be the best choice in all scenarios. They can be expensive in scenarios where insertions are frequent and searches are infrequent. In such cases, other data structures such as B-trees and B+ trees may be more suitable. Therefore, it is important to consider the specific use case and data requirements before choosing AVL trees as the optimal solution.[2].
 
 Citation:
 [1] Mahdi Amani (2018) Gap terminology and related combinatorial properties for AVL trees and Fibonacci-isomorphic trees, AKCE International Journal of Graphs and Combinatorics, 15:1, 14-21, DOI: 10.1016/j.akcej.2018.01.019
+[2]Gupta, G. K. (1984). Self-assessment procedure XIII: a self-assessment procedure dealing with binary search trees and B-trees. Communications of the ACM, 27(5), 435-443.
