@@ -12,6 +12,9 @@ where h(vr) and h(vl) are the heights of the right and left subtrees of node v.
 The balance factor of nodes in an AVL tree may take on one of three possible values: -1, 0, or +1.
 If the balance factor of a node is greater than one or less than negative one, then the tree is unbalanced and needs to be adjusted by performing rotations.
 
+An example or rotation is display below.
+![test1](https://user-images.githubusercontent.com/105125897/233560691-a3d5293e-d0c1-41a3-839d-0764fd458590.gif)
+
 In AVL trees, there are four types of rotations that are used to maintain the balance of the tree: left-left (LL), left-right (LR), right-left (RL), and right-right (RR) rotations.
 
 A left-left (LL) rotation is performed when the balance factor of a node is greater than one, and the height of the right subtree is greater than that of the left subtree. In an LL rotation, the left subtree of the node is rotated to the right, which results in the left child becoming the new root of the subtree.
