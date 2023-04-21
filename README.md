@@ -1,5 +1,10 @@
 # Avl_tree
-**Intro:**
+* **Author**: Ziqing Lin
+* **Semester** Spring 2023
+* **Languages Used**: c
+
+
+## Intro
 
 Consider a scenario where a large dataset needs to be searched for a specific value using an index. Traditional data structures such as arrays and hash tables may not always provide an optimal solution for this problem. Arrays have a fixed size, and resizing them can be time-consuming and resource-intensive, while hash tables can suffer from collisions, leading to inefficient searching.
 
@@ -45,7 +50,7 @@ This report is an analysis of the time complexity for insertion and search opera
 
 In addition to speed analysis, this report also analyze the relationship between the number of swaps with number of nodes, as well as the order the nodes are given. **It is hypothesized that the number of swaps required for AVL tree insertion increases as the number of nodes in the tree increases, due to the self-balancing feature of AVL trees. It is expected that the number of swaps required for AVL tree insertion will be higher when the nodes are given in ascending order compared to when the nodes are given in a random order.** When the nodes are given in ascending order, the AVL tree becomes more imbalanced, leading to more rotations being required to maintain a balanced height. On the other hand, when the nodes are given in a random order, the AVL tree is more likely to be balanced, requiring fewer rotations and resulting in a lower number of swaps needed for insertion.
 
-**Method:**
+## Method 
 
 An AVL tree is implemented using the node structure. Each node stores a key, a pointer to the left child, a pointer to the right child, and a height value. The height value is updated during insertion and deletion operations to ensure that the tree remains balanced.
 
