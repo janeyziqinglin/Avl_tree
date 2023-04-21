@@ -1,5 +1,6 @@
 # Avl_tree
 **Intro:**
+
 Consider a scenario where a large dataset needs to be searched for a specific value using an index. Traditional data structures such as arrays and hash tables may not always provide an optimal solution for this problem. Arrays have a fixed size, and resizing them can be time-consuming and resource-intensive, while hash tables can suffer from collisions, leading to inefficient searching.
 
 Binary search trees (BST) are another type of data structure that can be used for searching data, but the time complexity of a BST depends on its height. If the BST is balanced, the time complexity for searching, insertion, and deletion is O(log n), where n is the number of nodes in the tree. However, if the tree is imbalanced, such as a skewed tree, the time complexity can be as high as O(n), which is the same as that of an array. This makes BSTs unsuitable for handling large datasets with imbalanced or skewed data.
@@ -45,12 +46,14 @@ This report is an analysis of the time complexity for insertion and search opera
 In addition to speed analysis, this report also analyze the relationship between the number of swaps with number of nodes, as well as the order the nodes are given. **It is hypothesized that the number of swaps required for AVL tree insertion increases as the number of nodes in the tree increases, due to the self-balancing feature of AVL trees. It is expected that the number of swaps required for AVL tree insertion will be higher when the nodes are given in ascending order compared to when the nodes are given in a random order.** When the nodes are given in ascending order, the AVL tree becomes more imbalanced, leading to more rotations being required to maintain a balanced height. On the other hand, when the nodes are given in a random order, the AVL tree is more likely to be balanced, requiring fewer rotations and resulting in a lower number of swaps needed for insertion.
 
 **Method:**
+
 An AVL tree is implemented using the node structure. Each node stores a key, a pointer to the left child, a pointer to the right child, and a height value. The height value is updated during insertion and deletion operations to ensure that the tree remains balanced.
 
 The main operations of an AVL tree are:
 createNode, which creates a new node with the given key. getHeight, which returns the height of the given node. getBalanceFactor, which returns the balance factor of the given node, which is the difference in height of its left and right subtrees. updateHeight, which updates the height of the given node. rightRotate, which performs a right rotation on the given node. leftRotate, which performs a left rotation on the given node. rebalance, which rebalances the subtree rooted at the given node. insert, which inserts a new node with the given key into the tree. find, which finds the node with the given key in the tree, and lastly delete, which deletes the node with the given key from the tree.
 
 **Results**
+
 table of empirical data o(n) between bst and avl (average and worst)
 Table II: Empirical data comparison of time complexity between BST and AVL tree in the worst case.
 | Time | BSTInsert (s) | AVLInsert (s) | BSTSearch (s) | AVLSearch (s) |
@@ -85,6 +88,7 @@ Figure 3. Swap number over node number for AVL tree using ascending order and ra
 ![swapnum](https://user-images.githubusercontent.com/105125897/233557371-2785bec3-cd32-479a-8551-ae4272035ccc.png)
 
 **Discussion:**
+
 Table II compares the time for insertion and search operations in BST and AVL trees for different numbers of nodes (10, 100, 1000, 10000, 25000, 50000, and 100000). Figure 1 and Figure 2 provides Graphical comparison for the empirical results.
 
 Figure 2 compares the time for search operations in BST and AVL trees. The results show that for search operations, AVL trees outperform BSTs in terms of time complexity, and thereby align with our hypothesis that AVL tree search is more efficient than BST search.
@@ -98,6 +102,7 @@ Table III confirm the hypothesis that the number of swaps required for AVL tree 
 As expected, Figure 3, shows that the number of swaps required for AVL tree insertion is higher when the nodes are given in ascending order compared to when the nodes are given in random order. In ascending order, the AVL tree becomes more imbalanced, leading to more rotations being required to maintain a balanced height. On the other hand, when the nodes are given in a random order, the AVL tree is more likely to be balanced, requiring fewer rotations and resulting in a lower number of swaps needed for insertion.
 
 **Conclusion:**
+
 The hypothesis of the report that AVL trees would outperform Binary Search Trees (BSTs) in terms of search times, particularly for imbalanced or skewed data. Additionally, it was hypothesized that the number of swaps required for AVL tree insertion would increase as the number of nodes in the tree increases. It was also expected that the number of swaps required for AVL tree insertion would be higher when the nodes were given in ascending order compared to when the nodes were given in a random order.
 
 The results of the analysis confirm the hypothesis that AVL trees outperform BSTs in terms of search times since it prevent the worst-case scenario that can occur in traditional binary search trees. However, for insertion operations, the results show that BSTs can have faster average insert times than AVL trees for small datasets, which is rationalized by the extra cost of rotation.
@@ -107,5 +112,6 @@ The hypothesis that the number of swaps required for AVL tree insertion is also 
 In conclusion, AVL trees offer several advantages over traditional binary search trees. They provide a reliable and efficient solution for searching and managing large datasets with imbalanced or skewed data. AVL trees offer faster search times than traditional binary search trees with O(log n) time complexity for search, insertion, and deletion operations, where n is the number of nodes in the tree. Additionally, the self-balancing feature of AVL trees minimizes the time complexity of operations, making them a powerful tool for handling large datasets.However, AVL trees are not perfect and may not be the best choice in all scenarios. They can be expensive in scenarios where insertions are frequent and searches are infrequent. In such cases, other data structures such as B-trees and B+ trees may be more suitable. Therefore, it is important to consider the specific use case and data requirements before choosing AVL trees as the optimal solution.[2].
 
 **Citation:**
+
 [1] Mahdi Amani (2018) Gap terminology and related combinatorial properties for AVL trees and Fibonacci-isomorphic trees, AKCE International Journal of Graphs and Combinatorics, 15:1, 14-21, DOI: 10.1016/j.akcej.2018.01.019
 [2]Gupta, G. K. (1984). Self-assessment procedure XIII: a self-assessment procedure dealing with binary search trees and B-trees. Communications of the ACM, 27(5), 435-443.
