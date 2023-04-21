@@ -54,7 +54,8 @@ createNode, which creates a new node with the given key. getHeight, which return
 
 **Results**
 
-table of empirical data o(n) between bst and avl (average and worst)
+Below are the empirical data generated for further analysis. 
+
 Table II: Empirical data comparison of time complexity between BST and AVL tree in the worst case.
 | Time | BSTInsert (s) | AVLInsert (s) | BSTSearch (s) | AVLSearch (s) |
 |------|---------------|----------------|---------------|----------------|
