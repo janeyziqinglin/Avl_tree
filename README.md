@@ -1,5 +1,5 @@
 # Avl_tree
-Intro:
+"Intro:"
 Consider a scenario where a large dataset needs to be searched for a specific value using an index. Traditional data structures such as arrays and hash tables may not always provide an optimal solution for this problem. Arrays have a fixed size, and resizing them can be time-consuming and resource-intensive, while hash tables can suffer from collisions, leading to inefficient searching.
 
 Binary search trees (BST) are another type of data structure that can be used for searching data, but the time complexity of a BST depends on its height. If the BST is balanced, the time complexity for searching, insertion, and deletion is O(log n), where n is the number of nodes in the tree. However, if the tree is imbalanced, such as a skewed tree, the time complexity can be as high as O(n), which is the same as that of an array. This makes BSTs unsuitable for handling large datasets with imbalanced or skewed data.
