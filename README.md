@@ -71,10 +71,13 @@ Table III: Empirical data comparison of number of swap in AVL tree using ascendi
 
 plot
 Figure 1. Comparison of time complexity between BST and AVL tree for insert operation.
+![insert](https://user-images.githubusercontent.com/105125897/233557351-fb3ea320-8b9b-4fa7-aef1-854c8ac7f75f.png)
 
 Figure 2. Comparison of time complexity between BST and AVL tree for search operation.
+![search](https://user-images.githubusercontent.com/105125897/233557360-77aef7e7-ad6b-4d3f-9d84-1e68d939e074.png)
 
 Figure 3. Swap number over node number for AVL tree using ascending order and random order.
+![swapnum](https://user-images.githubusercontent.com/105125897/233557371-2785bec3-cd32-479a-8551-ae4272035ccc.png)
 
 Discussion:
 Table II compares the time for insertion and search operations in BST and AVL trees for different numbers of nodes (10, 100, 1000, 10000, 25000, 50000, and 100000). Figure 1 and Figure 2 provides Graphical comparison for the empirical results.
