@@ -112,7 +112,9 @@ The hypothesis that the number of swaps required for AVL tree insertion is also 
 In conclusion, AVL trees offer several advantages over traditional binary search trees. They provide a reliable and efficient solution for searching and managing large datasets with imbalanced or skewed data. AVL trees offer faster search times than traditional binary search trees with O(log n) time complexity for search, insertion, and deletion operations, where n is the number of nodes in the tree. Additionally, the self-balancing feature of AVL trees minimizes the time complexity of operations, making them a powerful tool for handling large datasets.However, AVL trees are not perfect and may not be the best choice in all scenarios. They can be expensive in scenarios where insertions are frequent and searches are infrequent. In such cases, other self-balancing binary search trees such as Red-Black trees  B-trees and B+ trees may be more suitable. Therefore, it is important to consider the specific use case and data requirements before choosing AVL trees as the optimal solution.[3].
 
 **Citation:**
+
 [1]Adel'son-Vel'skiy, G.M., and Landis, Ye.M. An algorithm for the organization of information. Doklady Akad. Nauk USSR Moscos 16, No. 2 (1962), 263-266. Also available in translation as U.S. Dept. of Commerce OTS, JPRS 17,137, Washington, D.C., and as NASA Document N63-11777.
 
 [2] Mahdi Amani (2018) Gap terminology and related combinatorial properties for AVL trees and Fibonacci-isomorphic trees, AKCE International Journal of Graphs and Combinatorics, 15:1, 14-21, DOI: 10.1016/j.akcej.2018.01.019
+
 [3]Gupta, G. K. (1984). Self-assessment procedure XIII: a self-assessment procedure dealing with binary search trees and B-trees. Communications of the ACM, 27(5), 435-443.
